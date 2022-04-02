@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "cairo-font";
+    src: url(../fonts/swald.ttf);
+}
+#top-menu .bg-light{
+    background-color: white !important;
+}
+body{
+    font-family: "cairo-font",Arial,sans-serif;
+    background-color: #fafafa;
+}
+p{
+    font-weight: bold;
+     
+}
+a{
+    color: black ;
+    text-decoration: none !important;
+}
+a:hover{
+    color:  black;
+}
+button,button:hover{
+    background-color: transparent !important;
+    color: #ff4757 !important;
+    border-color: #ff4757!important;
+   
+}
+button:hover{
+     background-color: #ff4757!important;
+    color: white !important;
+}
+.login{
+    color: #ff4757 !important;
+}
+.close:hover{
+    color: #ff4757!important;
+    background-color: transparent !important;
+}
+#top-menu .video-icon{
+    background-color:#ff4757;
+    color: white;
+    border-radius: 15%;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active> .nav-link{
+    background-color:#ff4757;
+    color: white;
+    border-radius: 3px; 
+    border-top-right-radius: 15px;
+}
+input.form-control:focus,
+button:focus {
+    box-shadow: none !important;
+}
+
+.card .card-icons{
+    position: relative;
+}
+.card-img-top{
+    height:195px ;
+    overflow: hidden;
+}
+.logo-img{
+ 
+    height: 45px;
+    width: 43px;
+    right: 233px;
+    overflow: hidden;
+}
+time{
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.952);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius:3px ;
+    font-size: small;    
+}
+.card .fa-play{
+    position: absolute;
+    top: 39%;
+    right: 50%;
+    color: rgba(0, 0, 0, 0.753);
+    display: none;
+}
+
+.card:hover .fa-play{
+    display: inline;
+}
+.card:hover {
+    transform: translateY(-.70%);
+}
+.card{
+    transition: transform .5s; 
+}
+
+.card .card-title{
+    height:50px ;
+    overflow: hidden;
+}
+.card .card-horizontal .card-body p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body{
+    min-width: 0;
+}
+.card{
+    border-bottom: #6C63FF solid 4px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card:hover{
+    border-bottom: #ff4757 solid 4px;
+    transition: all .5s ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#top-menu .fa-bars{
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    z-index: 3;
+    left: -17rem;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.sidebar .list-group{
+    padding-left: 0em;
+}
+.sidebar .purple{
+    color: #ff4757;
+}
+.sidebar .list-group-item:hover {
+    color: #fafafa;
+    background-color:   #ff4757 ;
+    border-left: 	#605adae0  solid 7px;
+    border-top-right-radius: 5px;
+    transition: .5s ease-in-out;
+}
+.sidebar .list-group-item:hover .purple{
+    color: rgb(255, 255, 255);
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+#wrap.toggled .sidebar{
+    left: 0rem;
+}
+.sidebar::-webkit-scrollbar{
+    background: rgb(163, 163, 163);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color:rgb(0, 0, 0) ;
+    width: 8px;
+}
+
+.layer{
+    position: fixed;
+  
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(34, 33, 33, 0.5);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon{
+    color: #ff4757;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 132px;
+    display: none;
+}
+.navbar .search-icon:hover{
+     transition: 0.5s ;
+    color: #fff;
+    background-color: #ff4757;
+    border: #ff4757 1px;
+    border-radius: 10px ;
+   
+}
+
+.search-input{
+    position:fixed;
+    top: 72px;
+    border: none;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #f7f7f7;
+    border-bottom: #605adae0 solid 4px;
+    width: 100%;
+    z-index:1;
+    display: none;
+}
+.search-input:focus{
+    border-bottom: #ff4757 solid 4px;
+    transition: all .4s ease-in-out;
+}
+.cotainer-fluid{
+    padding: 0px;
+    overflow: hidden;
+}
+
+@media(max-width:1115px){
+   .navbar .collapse .form-inline {
+       display: none;
+   }
+   .navbar .search-icon{
+       display: inline;
+   }
+   
+}
+@media(min-width:1115px){
+    .search-input{
+        display: none !important;
+    }
+}
+@media(min-width:992px){
+    .search-icon{
+        margin-left: 40px !important;
+    }
+}

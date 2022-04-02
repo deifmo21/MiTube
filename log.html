@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css  ">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/log.css">
+</head>
+
+<body class='mt-5  '>
+  <div class="layer"></div>
+  <div id="top-menu">
+    <div class="cotainer-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+        <i class="fa-solid fa-bars fa-lg" id="toggler"></i>
+        <b>
+          <a class="navbar-brand ml-4" href="index.html">
+
+            <span class="video-icon p-1"><i class="fa fa-play-circle"></i></span>
+            MiTube
+          </a>
+        </b>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item frist-list-element ">
+              <a class="nav-link px-3 ml-1 mr-3" href="index.html">Suggested videos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 ml-1" href="#"> New videos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  px-3 ml-1" href="log.html">Trending</a>
+            </li>
+
+          </ul>
+          <i class="fas fa-search  search-icon"></i>
+
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button onclick="location.href='search.html ';" class="btn btn-outline-success my-2 my-sm-0 "
+              type="submit">Search</button>
+          </div>
+        </div>
+        <i class="fas fa-search  search-icon"></i>
+        <!--استخدم media-->
+        <a class="nav-link login " href="#" data-toggle="modal" data-target="#LoginModal">LogIn</a>
+      </nav>
+      <input type="search" class="form-control search-input" placeholder="Search...">
+      <!-- sidebar -->
+      <div class="row pt-4">
+        <div id="wrap">
+          <div class="sidebar">
+            <ul class="list-group list-group-flush">
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-house purple "></i> Home Page
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-arrow-trend-up purple "></i> Trending
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-play purple "></i> Library
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-save purple"></i> Saved
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-clock-four purple "></i> History
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-house purple "></i> Home Page
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-arrow-trend-up purple "></i> Trending
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-play purple "></i> Library
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-save purple"></i> Saved
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-clock-four purple "></i> History
+              </a>
+            </ul>
+            <p class=" pl-3"> About JournalismCopyrightContact
+              MiTube <br>dont Copy new features <br> <br><br>
+              &copy; 2022 MiTube - Deif mohamed </p>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="LoginModal">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content ">
+            <div class="modal-header ">
+              <h5 class="modal-title" id="LoginModal">LogIn</h5>
+              <button type="button" class="close " data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group mx-auto">
+                  <label for="email" class="col-form-label">Email :</label>
+                  <input type="email" class="form-control " id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label">Password :</label>
+                  <input class="form-control " type="password " id="password" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="channel.html">Forget Password ?</a>
+              <a href="channel.html" class="mx-auto">SignIn</a>
+              <button type="button" class="btn btn-primary">LogIn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hsitory-page -->
+
+  <div class="hsitory-page pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 history-right-column">
+          <input type="search" placeholder="ابحث في التاريخ" class="form-control my-3 border-0">
+          <hr>
+          <label class="ml-2">Library:</label>
+          <div class="list-group list-group-flush pr-0 " id="list-tab">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+              href="#list-home">History</a>
+           
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+              href="#list-settings">Comments</a>
+           
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+              href="#list-settings">Channel</a>
+          </div>
+          <label class="mt-4 ml-2" >Date:</label>
+          <div class="list-group list-group-flush pr-0 " id="list-tab">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+              href="#list-home">24 Hours</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+              href="#list-profile">3 Days</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+              href="#list-messages"> Week</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+              href="#list-settings">Month</a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-horizontal d-md-flex  d-block">
+                    <div class="img-square-wrapper card-icons">
+                      <a href="watch.html">
+                        <img class="image-cap" src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" alt="Card image cap">
+                        <time>23:11</time>
+                        <i class="fas fa-play fa-2x"></i>
+
+                      </a>
+                      <i class="fas fa-times remove "></i>
+                    </div>
+        
+                    <div class="card-body p-2 ">
+                      <a class="card-title ">
+                        <h4>How to use DevTools in Chrome</h4>
+                      </a>
+                      <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                        browser that enables you to effectively track CSS formatting problems, easily detect
+                        Javascript errors, as well
+                        as provide you with highlights and information about site performance. </p>
+        
+                      <small class="text-muted">
+                        <i class="fa-solid fa-film  "></i> <span> 1M views</span>
+                        <i class="fa-solid fa-clock ml-1"></i><span> 6 Month</span>
+                      </small>
+                      <a href="channel.html">
+                        <img class="rounded-circle logo-img ml-3" src="img/logo.jpeg " width="30px">
+                        <span class='card-text font-weight-bold'>Logo Design</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <i class="fas fa-times remove"></i>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://kit.fontawesome.com/57967602b2.js" crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <!--slim بعد نسخة  html  في ملف jquery نقوم بإضافة النسخة التالية من -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/script.js"></script>
+
+  <script src="./js/log.js"></script>
+</body>
+
+</html>

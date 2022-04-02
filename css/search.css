@@ -1,0 +1,42 @@
+#search-filters-icon{
+    cursor: pointer;
+}
+.filter-column{
+    display: none;
+}
+input:checked+span{
+    color: #fc3848 ;
+    transition: .3s;
+}
+
+.card{
+    border-bottom: solid rgb(216, 216, 216);
+}
+.card:hover{
+    border-bottom: solid rgb(216, 216, 216);
+}
+.image-cap{
+    width: 319px;
+    height: 200px;
+}
+
+@media (max-width : 767px){
+    .card .img-square-wrapper img{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px ) {
+    .card .card-horizontal .card-body .channel-img {
+        display: block ;
+        margin-top: 10px;
+    }
+    .card .card-horizontal .card-body .channel-img>img {
+        margin-right: 0px !important;
+    }
+    h4{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp:2 ;
+        -webkit-box-orient: vertical;
+    }
+} 

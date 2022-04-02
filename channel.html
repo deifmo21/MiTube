@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel Mitube</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css  ">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/channel.css">
+</head>
+
+<body class='mt-5  '>
+  <div class="layer"></div>
+  <div id="top-menu">
+    <div class="cotainer-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+        <i class="fa-solid fa-bars fa-lg" id="toggler"></i>
+        <b>
+          <a class="navbar-brand ml-4" href="index.html">
+
+            <span class="video-icon p-1"><i class="fa fa-play-circle"></i></span>
+            MiTube
+          </a>
+        </b>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item frist-list-element l1 ">
+              <a class="nav-link px-3 ml-1 mr-3" href="index.html">Suggested videos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 ml-1" href="#"> New videos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  px-3 ml-1" href="log.html">Trending</a>
+            </li>
+
+          </ul>
+          <i class="fas fa-search  search-icon"></i>
+
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button onclick="location.href='search.html ';" class="btn btn-outline-success my-2 my-sm-0 "
+              type="submit">Search</button>
+          </div>
+        </div>
+        <i class="fas fa-search  search-icon"></i>
+        <!--استخدم media-->
+        <a class="nav-link login " href="#" data-toggle="modal" data-target="#LoginModal">LogIn</a>
+      </nav>
+      <input type="search" class="form-control search-input" placeholder="Search...">
+      <!-- sidebar -->
+      <div class="row pt-4">
+        <div id="wrap">
+          <div class="sidebar">
+            <ul class="list-group list-group-flush">
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-house purple "></i> Home Page
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-arrow-trend-up purple "></i> Trending
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-play purple "></i> Library
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-save purple"></i> Saved
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-clock-four purple "></i> History
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-house purple "></i> Home Page
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-arrow-trend-up purple "></i> Trending
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-play purple "></i> Library
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-save purple"></i> Saved
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid mr-2 fa-clock-four purple "></i> History
+              </a>
+            </ul>
+            <p class=" pl-3"> About JournalismCopyrightContact
+              MiTube <br>dont Copy new features <br> <br><br>
+              &copy; 2022 MiTube - Deif mohamed </p>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="LoginModal">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content ">
+            <div class="modal-header ">
+              <h5 class="modal-title" id="LoginModal">LogIn</h5>
+              <button type="button" class="close " data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group mx-auto">
+                  <label for="email" class="col-form-label">Email :</label>
+                  <input type="email" class="form-control " id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label">Password :</label>
+                  <input class="form-control " type="password " id="password" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="channel.html">Forget Password ?</a>
+              <a href="channel.html" class="mx-auto">SignIn</a>
+              <button type="button" class="btn btn-primary">LogIn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+  <div class="channel-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="banner position-relative">
+          <img class="img-fluid fr" src="img/17.svg" alt="">
+          <div class="social-media position-absolute  p-1 ">
+
+            <i class="fa-brands fa-facebook-f fac mx-2"></i>
+            <i class="fa-brands fa-twitter twit "></i>
+            <i class="fa-brands fa-instagram insta mx-2"></i>
+
+          </div>
+          <div class="follow position-absolute ">
+            <div class="btn  tog">subscribe 42233
+              <i class="fa-solid fa-bell ball"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row rtl ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto w-100 ">
+          <ul class="navbar-nav mx-auto d-block pl-0">
+
+            <li class="nav-item">
+              <a class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="#">My Videos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ">List </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ">Channel</a>
+            </li>
+
+
+            <li class="nav-item active ">
+              <a class="nav-link mr-2 " href="#">Home page</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="video-section bg-white p-2 mt-3 ">
+        <div class="card border-0">
+          <div class="row px-4">
+
+            <div class="col-md-6">
+              <div class="card-block">
+                <div class="card-body p-2 ">
+                  <a class="card-title ">
+                    <h4>How to use DevTools in Chrome</h4>
+                  </a>
+                  <p class="card-text">In this lesson, we will learn about the DevTools provided by google chrome
+                    browser that enables you to effectively track CSS formatting problems, easily detect
+                    Javascript errors, as well
+                    as provide you with highlights and information about site performance. </p>
+
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i> <span> 1M views </span><br>
+                    <i class="fa-solid fa-clock "></i><span> 6 Month</span>
+                  </small>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <video controls autoplay loop muted poster="img/poster.png" class="w-100">
+                <track kind="captions" src="viedo/caption.vtt" srclang="ar" label="عربي" default>
+                <source src="video/video.webm" type="video/webm">
+                <source src="video/video.mp4" type="video/mp4">
+                لايدعم المتصفح الخاص بك العنصر<code>video</code>
+              </video>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="latest-download">
+        <div class="container">
+          <h4 class="py-5 mx-4">Latest uploaded videos</h4>
+          <div class="row px-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"><img src="img/thumbnail/undraw_camera_re_cnp4.svg" class="card-img-top"
+                      alt="...">
+                    <time class="px-1">9:21</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 3k Views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 9 Month</span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl '>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"> <img src="img/thumbnail/undraw_video_influencer_-9-oyy.svg" class="card-img-top"
+                      alt="...">
+                    <time class="px-1">7:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 1.2M Views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 12 Month </span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl '>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"> <img src="img/thumbnail/undraw_fashion_photoshoot_mtq8.svg" class="card-img-top"
+                      alt="...">
+                    <time class="px-1">7:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 4M views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 6Month</span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl'>
+
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"> <img src="img/thumbnail/1.svg" class="card-img-top" alt="...">
+                    <time class="px-1">7:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 2.5M views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 3 Month </span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl'>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"> <img src="img/thumbnail/6.svg" class="card-img-top" alt="...">
+                    <time class="px-1">6:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 3k Views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 9 Month</span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl'>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"><img src="img/thumbnail/5.svg" class="card-img-top" alt="...">
+                    <time class="px-1">7:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 3k Views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 9 Month</span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl'>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/thumbnail/6.svg" class="card-img-top" alt="...">
+                    <time class="px-1">7:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 3k Views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 9 Month</span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl'>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+              <div class="card p-1 mb-3">
+                <div class="card-icons">
+                  <a href="watch.html"> <img src="img/thumbnail/4.svg" class="card-img-top" alt="...">
+                    <time class="px-1">7:50</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  <div class="card-body p-0">
+                    <p class="card-title"> A course on learning digital marketing and how to work with it </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i><span> 3K Views </span><br>
+                    <i class="fa-solid fa-clock"></i><span> 9 Month</span>
+                  </small>
+                </div>
+                <a href="channel.html" class='channel-img rtl'>
+                  <img src="img/logo.jpeg" class="rounded-circle my-2  ml-3 logo-img"
+                    width="40px">
+                  <strong><span class='card-text'>logo desigin</span></strong>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://kit.fontawesome.com/57967602b2.js" crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <!--slim بعد نسخة  html  في ملف jquery نقوم بإضافة النسخة التالية من -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="js/channel.js"></script>
+</body>
+
+</html>
