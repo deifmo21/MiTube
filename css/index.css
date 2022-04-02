@@ -184,7 +184,7 @@ time{
     padding: 15px 10px;
     position: absolute;
     top: 15px;
-    left: 132px;
+    right: 101px;
     display: none;
 }
 .navbar .search-icon:hover{
